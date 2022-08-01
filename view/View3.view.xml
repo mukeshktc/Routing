@@ -1,0 +1,16 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="kmn.rt.controller.View3"
+	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:h="kmn.rt.controls">
+	<Page title="View3">
+		<content>
+			<ObjectHeader intro="{country}" title="{name}" number="{sinceWhen}" numberUnit="{city}">
+				<attributes>
+					<ObjectAttribute title="contact" text="{contactPerson}"/>
+					<ObjectAttribute title="Operating Hours" text="{operatingHours}"/>
+					<ObjectAttribute title="website" text="{website(if any)}"/>
+				</attributes>
+			</ObjectHeader>
+			<SearchField search="onMapSearch"></SearchField>
+			<h:maps></h:maps>
+		</content>
+	</Page>
+</mvc:View>

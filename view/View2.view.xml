@@ -1,0 +1,34 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="kmn.rt.controller.View2">
+	<Page title="View2">
+		<content>
+			<ObjectHeader intro="{benefit}" title="{name}" numberUnit="{unit}" number="{price}" icon="{photo}"/>
+			<IconTabBar>
+				<items>
+					<IconTabFilter text="More Info" icon="sap-icon://task" iconColor="Neutral" id="__filter0">
+						<content>
+							<core:Fragment fragmentName="kmn.rt.fragments.MoreInfo" type="XML"></core:Fragment>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter text="Suppliers" icon="sap-icon://supplier" iconColor="Neutral" id="__filter1">
+						<content>
+							<core:Fragment fragmentName="kmn.rt.fragments.SuppData" type="XML"></core:Fragment>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter text="Select City" icon="sap-icon://home" iconColor="Neutral" id="__filter2">
+						<content>
+							<core:Fragment fragmentName="kmn.rt.fragments.cities" type="XML"></core:Fragment>
+						</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Approve" type="Accept" press="onApprove"/>
+				<Button text="Reject" type="Reject" press="onReject"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

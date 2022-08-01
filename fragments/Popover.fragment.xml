@@ -1,0 +1,49 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Popover showHeader="false" contentWidth="300px" contentHeight="300px" placement="Bottom">
+		<NavContainer id="navCon">
+			<Page title="Select Price Range">
+				<List id="list" items="{/SelectionCriteria}">
+					<StandardListItem title="{filter}" type="Active" press="onFilter"></StandardListItem>
+				</List>
+			</Page>
+		</NavContainer>
+	</Popover>
+</core:FragmentDefinition>
+<!--<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		id="myPopover"
+		title="Select Price Range"
+		class="sapUiResponsivePadding--header sapUiResponsivePadding--footer"
+		placement="Bottom">-->
+<!--<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button
+					id="email1"
+					text="Email"
+					press="handleEmailPress" />
+					<Button
+					id="email"
+					text="Email"
+					press="handleEmailPress" />
+			</OverflowToolbar>
+		</footer>-->
+<!--<Image src="{/fruits/0/photo}" width="15em" densityAware="false" />-->
+<!--	<content>
+			<Button
+					id="email1"
+					text="less than 50"
+					press="handleEmailPress" />
+					<Button
+					id="email"
+					text="between 50 and 80"
+					press="handleEmailPress" />
+					<Button
+					id="email2"
+					text="greater than 80"
+					press="handleEmailPress" />
+		</content>
+	</Popover>
+</core:FragmentDefinition>-->

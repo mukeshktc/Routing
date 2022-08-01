@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Select items="{/cities}">
+		<items>
+			<core:Item key="{state}" text="{city}"></core:Item>
+		</items>
+	</Select>
+	<ComboBox items="{/cities}">
+		<items>
+			<core:Item key="{city}" text="{city}"></core:Item>
+		</items>
+	</ComboBox>
+	<MultiComboBox items="{/cities}">
+		<items>
+			<core:Item key="{city}" text="{city}"></core:Item>
+		</items>
+	</MultiComboBox>
+	<DatePicker>
+		
+	</DatePicker>
+	<!--<List items="{/cities}">
+		<ObjectListItem intro="{famousFor}" title="{city}" numberUnit="{state}">
+			<attributes>
+				<ObjectAttribute title="State" text="{state}"></ObjectAttribute>
+				<ObjectAttribute title="Remarks" text="{remarks}"></ObjectAttribute>
+			</attributes>
+		</ObjectListItem>
+	</List>-->
+	
+</core:FragmentDefinition>

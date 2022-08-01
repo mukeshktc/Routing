@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<!--<List items="{/suppliers}">
+		<ObjectListItem title="{name}" intro="{country}" number="{sinceWhen}" numberUnit="{city}"></ObjectListItem>
+	</List-->>
+	<Table id="idTable" items="{/suppliers}" mode="SingleSelectMaster" selectionChange="onTableClick" alternateRowColors="true">
+		<headerToolbar>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://filter" press="onFilter"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Text text="NAME"></Text>
+			</Column>
+			<Column>
+				<Text text="CITY"></Text>
+			</Column>
+			<Column>
+				<Text text="SINCE WHEN"></Text>
+			</Column>
+			<Column>
+				<Text text="COUNTRY"></Text>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{name}"></Text>
+					<Input value="{city}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
+					<Text text="{sinceWhen}"></Text>
+					<Text text="{country}"></Text>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

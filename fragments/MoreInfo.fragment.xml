@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:h="kmn.rt.controls">
+	<h:CustomControl mario="Mukesh" color="green" zumba="2px solid red"></h:CustomControl>
+	<h:MyButton text= "just hover on me" bobba="onHover"></h:MyButton>
+	<f:SimpleForm xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:f="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="__form0">
+		<f:content>
+			<core:Title xmlns:core="sap.ui.core" text="More Details" id="__title0"/>
+			<Label xmlns="sap.m" text="Color" id="__label0"/>
+			<Text xmlns="sap.m" width="100%" id="__input0" text="{color}"/>
+			<Label xmlns="sap.m" text="Health Benefit" id="__label1"/>
+			<Text xmlns="sap.m" width="100%" id="__input1" text="{benefit}"/>
+			<Label xmlns="sap.m" text="Type" id="__label2"/>
+			<Text xmlns="sap.m" width="100%" id="__input2" text="{type}"/>
+		</f:content>
+	</f:SimpleForm>
+</core:FragmentDefinition>
